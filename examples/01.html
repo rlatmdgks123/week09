@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>9주차 예제 1 · 켜는 곳은 자식이 아니라 부모입니다</title>
   <style>
-    /*
-    9주차 예제 1 — 켜는 곳은 자식이 아니라 부모입니다
-    */
+    body {
+      background-color: yellow; /* 전체 배경 노란색 */
+      margin: 0;
+    }
+
     .container {        /* ← 부모(flex container)에 선언 */
       display: flex;
-      background-color: yellow;
     }
     /* .container의 자식들(flex item)이 자동으로 가로로 늘어섭니다. */
   </style>
@@ -18,16 +19,11 @@
 <body>
   <h1>제목 h1</h1>
   <p class="intro">문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.</p>
-  
-  <!-- ul을 div.container로 감싸서 부모 요소로 만듭니다 -->
-  <div class="container">
-    <ul>
-      <li>202678114</li>
-      <li>김승한</li>
-      <li>aisw</li>
-    </ul>
-  </div>
-
+  <ul>
+    <li>202678114</li>
+    <li>김승한</li>
+    <li>aisw</li>
+  </ul>
   <div class="box">div.box</div>
   <button>버튼</button>
 </body>
